@@ -15,9 +15,19 @@ const encoder = (req,res,next)=>{
     res.end()
 }
 
+const decoder = (req,res,next)=>{
+    const input = Object.values(req.body)
+    const decodedInput = input.map((item)=>{
+        return rot13(item)
+    })
+    res.send(decodedInput)
+    next();
+    res.end()
+}
 
-app.post('/task', encoder)
 
+app.post('/encode', encoder)
+app.post('/decode', decoder)
 
 
 
