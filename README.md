@@ -44,3 +44,11 @@ Response will be:
     "ABCDEFG", <br />
     "BCDEFGH" <br />
 ]
+
+
+<strong>UI Screenshots</strong>
+
+![Encoding Data](screenshots/encode.png "Encoding Data")
+
+
+![Decoding Data](screenshots/decode.png "Decoding Data")
