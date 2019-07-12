@@ -16,7 +16,9 @@ const app = express()
 
 
 const publicDirectoryPath = path.join(__dirname, './public');
+console.log(publicDirectoryPath)
 const viewsPath = path.join(__dirname, './templates/views');
+console.log(viewsPath)
 const partialsPath = path.join(__dirname, './templates/partials');
 
 
