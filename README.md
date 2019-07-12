@@ -5,7 +5,7 @@ This project encodes/decodes the text fields in an HTTP request body (for POST m
 
 Examples:
 
-<strong>Encoding: To encode an incoming request body, send the below request via POSTMAN </strong>
+<strong>Encoding: To encode an incoming request body, send the below request via a simple UI </strong>
 
 Route: localhost:3000/encode
 
@@ -64,3 +64,6 @@ This project implements typescript as the original ROT-13 project has been conve
 6. Fix all errors/warnings etc. Sometimes you may have to install type definitions for the various libraries being used e.g. npm i @types/express
 7. Check all the paths in your destination folder, change package.json so that main script from destination folder is run.
 8. Nodemon/Node will only run .js files and not .ts files, so if you don't have .js files in the destination folder after renaming, you can run tsc in terminal to place them there again.
+
+
+<strong>Note: This project implements a custom made ROT library (ROT13.js)</strong>
