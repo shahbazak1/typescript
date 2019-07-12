@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROT13 Tasks</title>
+        <link rel = "icon" href = "https://documents.trendmicro.com/images/TEx/articles/free-encryption.jpg">
+        <link rel="stylesheet" href="/css/styles.css">
+        
+
+    </head>
+    <body>
+        <div class = "main-content">
+            {{>header}}
+
+            <p>Use the text box below to encode/decode your JSON requests</p>
+
+            <form>
+                <textarea id = "inputTextArea" placeholder="Input JSON Object" rows="20" cols="25"></textarea>
+                <textarea id = "outputTextArea" placeholder="Output JSON Object" rows="20" cols="25" disabled></textarea>
+                
+                {{!-- <p id="message-1"></p>
+                <p id="message-2"></p> --}}
+                <br>
+
+                <p>Please select whether you would like to Encode or Decode:</p>
+                <input id = "encode" type="radio" name="encryptionType" value="encode"> Encode <br>
+                <input id = "decode" type="radio" name="encryptionType" value="decode"> Decode <br>
+                <br>
+                <br>
+                <button>Run</button>
+            </form>
+            
+
+           
+        </div>
+        
+            {{>footer}}
+
+            <script src = '/js/app.js'></script>
+        
+    </body>
+</html>
